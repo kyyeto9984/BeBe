@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    tools:context="com.lsj.cococ.mybebe.LoginActivity">
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/logo_login"
+        android:textColor="@color/textColorPrimary" />
+
+    <LinearLayout
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/title"
+        android:orientation="vertical"
+        android:paddingTop="48dp"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/user_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/edittext_radius"
+            android:gravity="center"
+            android:hint="아이디를 입력하세요"
+            android:textColor="@color/textColorPrimary"
+            android:textColorHint="@color/textColorPrimary"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_radius"
+            android:gravity="center"
+            android:hint="비밀번호를 입력하세요"
+            android:password="true"
+            android:textColor="@color/textColorPrimary"
+            android:textColorHint="@color/textColorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/idsave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이디저장"
+                android:textColor="@color/textColorPrimary" />
+
+            <CheckBox
+                android:id="@+id/autoLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자동로그인"
+                android:textColor="@color/textColorPrimary" />
+
+        </LinearLayout>
+
+        <com.nhn.android.naverlogin.ui.view.OAuthLoginButton
+            android:id="@+id/buttonOAuthLoginImg"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/ColorPrimaryDark"
+                android:text="회원가입"
+                android:textSize="18dp"
+                android:textColor="@color/textColorPrimary"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"/>
+
+            <com.dd.processbutton.iml.ActionProcessButton
+                android:id="@+id/login_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/ColorPrimaryDark"
+                android:text="Login"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                custom:colorComplete="@color/green_complete"
+                custom:colorError="@color/red_error"
+                custom:colorNormal="@color/ColorPrimaryDark"
+                custom:colorPressed="@color/blue_pressed"
+                custom:colorProgress="@color/ColorPrimary"
+                custom:textComplete="Success"
+                custom:textError="Error"
+                custom:textProgress="Loading"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

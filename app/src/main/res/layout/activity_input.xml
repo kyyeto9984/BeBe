@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lsj.cococ.mybebe.InputActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:layout_below="@id/toolbar"
+        android:layout_margin="8dp"
+        card_view:cardBackgroundColor="@color/input_pannel_bg"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardElevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:background="@drawable/edittext_input_header"
+                android:gravity="center"
+                android:text="1 개월"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/textColorPrimary" />
+
+
+            <FrameLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:id="@+id/align_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/camera"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/input_camera_btn" />
+
+                    <ImageView
+                        android:id="@+id/gallery"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/input_gallery_btn" />
+
+                    <RelativeLayout
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/edit_box"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/input_text_btn" />
+
+
+                    <EditText
+                        android:id="@+id/baby_height_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColorPrimary"
+                        android:background="#00FFFFFF"
+                        android:layout_centerInParent="true"
+                        android:hint="70"
+                        android:textColorHint="@color/textColorPrimary"
+                        android:gravity="center"
+                        android:textSize="30dp"
+                        android:maxLength="3"
+                        android:layout_weight="1"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="카메라로 신장체크"
+                    android:textColor="@color/ColorPrimary"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="갤러리로 신장체크"
+                    android:textColor="@color/ColorPrimary"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="직접입력"
+                    android:textColor="@color/ColorPrimary"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/gridlist"
+                android:layout_below="@id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="245dp"
+                android:columnWidth="72dp"
+                android:numColumns="auto_fit"
+                android:layout_margin="12dp"
+                android:padding="10dp"
+                android:background="@drawable/gridview_radius"
+                android:stretchMode="columnWidth"/>
+
+            <Button
+                android:id="@+id/input_btn"
+                android:layout_below="@id/gridlist"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="입력완료 !"
+                android:layout_margin="12dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/textColorPrimary"
+                android:background="@drawable/edittext_input_header"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

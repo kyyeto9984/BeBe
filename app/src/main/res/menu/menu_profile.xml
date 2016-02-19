@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.bebe.lsi.bebe.Activity.ProfileActivity">
+    <item android:id="@+id/action_edit" android:title=""
+        android:icon="@drawable/addbaby_check_btn"
+        android:orderInCategory="100" app:showAsAction="always" />
+</menu>

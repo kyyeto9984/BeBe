@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BeBe</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_location">LocationActivity</string>
+    <string name="title_activity_place">PlaceActivity</string>
+    <string name="title_activity_add_baby">AddBabyActivity</string>
+    <string name="title_activity_height">HeightActivity</string>
+    <string name="title_activity_input">InputActivity</string>
+    <string name="title_activity_prifile">PrifileActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_information_acitvity">InformationAcitvity</string>
+    <string name="title_activity_information">InformationActivity</string>
+    <string name="title_activity_function">FunctionActivity</string>
+    <string name="title_activity_community">CommunityActivity</string>
+    <string name="title_activity_diary">DiaryActivity</string>
+    <string name="title_activity_hotdeal">HotdealActivity</string>
+</resources>

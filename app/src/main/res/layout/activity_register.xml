@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="18dp"
+    android:background="@drawable/background_login"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="com.lsj.cococ.mybebe.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_title" />
+
+    <ScrollView
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical"
+            android:background="@drawable/login_pannel"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/nickname_register"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edittext_radius"
+                android:gravity="center"
+                android:hint="닉네임을 입력하세요"
+                android:textSize="16dp"
+                android:textColorHint="@color/textColorPrimary"
+                android:textColor="@color/textColorPrimary" />
+
+            <EditText
+                android:id="@+id/email_register"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/edittext_radius"
+                android:gravity="center"
+                android:hint="이메일을 입력하세요"
+                android:textSize="16dp"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/textColorPrimary"
+                android:textColor="@color/textColorPrimary" />
+
+            <EditText
+                android:id="@+id/password_register"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/edittext_radius"
+                android:gravity="center"
+                android:hint="비밀번호를 입력하세요"
+                android:inputType="textPassword"
+                android:password="true"
+                android:textSize="16dp"
+                android:textColorHint="@color/textColorPrimary"
+                android:textColor="@color/textColorPrimary" />
+
+            <EditText
+                android:id="@+id/re_password_register"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/edittext_radius"
+                android:gravity="center"
+                android:hint="비밀번호를 한번더 입력하세요"
+                android:inputType="textPassword"
+                android:password="true"
+                android:textSize="16dp"
+                android:textColorHint="@color/textColorPrimary"
+                android:textColor="@color/textColorPrimary" />
+
+            <!--<RadioGroup
+                android:id="@+id/radiogroup_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="남성"
+                    android:textColor="@color/textColorPrimary" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="여성"
+                    android:textColor="@color/textColorPrimary" />
+
+            </RadioGroup>-->
+
+            <!--<Button
+                android:id="@+id/birth_register"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/edittext_radius"
+                android:gravity="center"
+                android:text="your Birth"
+                android:textColor="@color/textColorPrimary" />-->
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/layout"
+            android:clickable="true"
+            android:src="@drawable/login_btn"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

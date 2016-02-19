@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="ColorPrimary">#F48FB1</color>
+    <color name="ColorPrimaryDark">#F06292</color>
+    <color name="GraphLineColor">#FCE4EC</color>
+    <color name="containerBackground">#FDE9EF</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="accent_color">#B6B6B6</color>
+    <color name="graphBG">#33000000</color>
+    <color name="input_pannel_bg">#fce4ec</color>
+    <color name="inforamtion_pannel_bg">#ffedd4</color>
+    <color name="information_ColorPrimary">#ffa726</color>
+    <color name="information_ColorPrimaryDark">#fb8c00</color>
+    <color name="function_ColorPrimary">#29b6f6</color>
+    <color name="function_ColorPrimaryDark">#039be5</color>
+    <color name="community_ColorPrimary">#8bc34a</color>
+    <color name="community_ColorPrimaryDark">#689f38</color>
+    <color name="community_pannel_bg">#f3f9ed</color>
+    <color name="diary_ColorPrimary">#ffc107</color>
+    <color name="diary_ColorPrimaryDark">#ffa000</color>
+    <color name="hotdeal_ColorPrimary">#ef5350</color>
+    <color name="hotdeal_ColorPrimaryDark">#e53935</color>
+    <color name="location_ColorPrimary">#ab47bc</color>
+    <color name="location_ColorPrimaryDark">#8e24aa</color>
+    <color name="location_pannel_bg">#eedaf2</color>
+</resources>
